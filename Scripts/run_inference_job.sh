@@ -30,6 +30,7 @@ jobid=$(sbatch \
     --time=$SBATCH_TIME_LIMIT \
     --output=$SBATCH_OUTPUT \
     --error=$SBATCH_ERROR \
+    --gres=gpu:1 \
     --parsable \
     $SBATCH_FILE_FULL)
 
