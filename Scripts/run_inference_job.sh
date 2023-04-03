@@ -2,7 +2,7 @@
 
 set -e
 
-export SBATCH_JOB_NAME="eval_flan_t5_4_langs" # change
+export SBATCH_JOB_NAME="eval_flan_t5_3_langs" # change
 export USERNAME=$USER
 export SBATCH_FILE="Scripts/inference_job.sh"
 

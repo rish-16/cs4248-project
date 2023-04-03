@@ -1,0 +1,24 @@
+0
+Eine Person mit braunen Haaren trägt ein blaues Hemd und lila Bandanna um ihren Hals mischt ein Design in eine runde, Ziegelsäule.
+Die Person, die ein blaues Hemd trägt, meißelt auf einer Ziegelsäule.
+entailment
+Eine Person meißelt ein Design aus Ziegelsteinen.
+german
+Premise: Eine Person mit braunen Haaren trägt ein blaues Hemd und lila Bandanna um ihren Hals mischt ein Design in eine runde, Ziegelsäule. Hypothesis: Die Person, die ein blaues Hemd trägt, meißelt auf einer Ziegelsäule. Please provide a justification for whether the hypothesis is entailed by the premise, contradicted by the premise, or if it cannot be determined.
+Premise: Zwei Männer sitzen in einem Wohnzimmer, einer trägt kulturelle Kleidung und ein anderer in einem weißen Hemd und Shorts, betrachten auf ihrem Fahrrad und Moped. Hypothesis: Zwei Männer in blauen Anzügen verkaufen Fahrräder und Mopeds. Please provide a justification for whether the hypothesis is entailed by the premise, contradicted by the premise, or if it cannot be determined.
+2000
+2000
+[[536  37  83]
+ [237 353  64]
+ [124  21 545]]
+              precision    recall  f1-score   support
+
+           0       0.60      0.82      0.69       656
+           1       0.86      0.54      0.66       654
+           2       0.79      0.79      0.79       690
+
+    accuracy                           0.72      2000
+   macro avg       0.75      0.72      0.71      2000
+weighted avg       0.75      0.72      0.72      2000
+
+50

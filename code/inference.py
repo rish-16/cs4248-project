@@ -16,7 +16,7 @@ from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 
 DATAPATH = "translated_data"
 MODEL = "flan-t5-large" # change
-FOLDER_NAMES = f"{MODEL}-4lang" # change
+FOLDER_NAMES = f"{MODEL}-3lang" # change
 
 EVAL_DE_PATH = f"{DATAPATH}/final_random_2k_de.csv"
 MODELPATH = f"saved_models/{FOLDER_NAMES}/"
