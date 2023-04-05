@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "code/inference.py", line 80, in <module>
+    pred_expl = pred.split(".")[1].strip().lower()
+IndexError: list index out of range
