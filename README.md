@@ -36,6 +36,8 @@ If running the notebooks, we recommend,
 
 1. creating a Google Drive with `translated_data` inside
 2. importing the notebook of choice as a Google Colab notebook (mounts to your drive folder)
+    - Notebooks tagged `_FT` are for finetuning 
+    - Notebooks tagged `_Eval` are to evaluate the respective finetuned model
 3. switching to GPU mode (preferably Premium Class + High RAM GPU)
 
 > **Note:** The notebook should run without errors if the filepaths are fixed according to your GDrive setup. If you run into any issues, please feel free to drop an [Issue](https://github.com/rish-16/cs4248-project/issues).
