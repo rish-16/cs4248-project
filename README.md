@@ -1,8 +1,10 @@
 # 🦜🌎 LLMs as Polyglots: On the Emergence of Multilingual Inference Abilities
 
-> By Rishabh Anand, Ryan Chung Yi Sheng, Huaiyu Deng, Zhi Bin Cai, Tan Rui Quan
-
 Code for CS4248 Group Project (AY22/23 Sem 2) [[`code`](https://github.com/rish-16/cs4248-project), [`pdf`](https://github.com/rish-16/cs4248-project/blob/main/CS4248_Group19_Final_Report.pdf), [`MLeSNLI on HuggingFace`](https://huggingface.co/datasets/rish16/MLe-SNLI)]
+
+By Rishabh Anand, Ryan Chung Yi Sheng, Huaiyu Deng, Zhi Bin Cai, Tan Rui Quan
+
+> **WARNING:** when running the code, we advise having access to a GPU that supports `bfloat16` operations with at least 40GB of RAM. We recommend an A100 if possible since it meets all these requirements!
 
 ## Abstract
 
@@ -39,9 +41,12 @@ If running the notebooks, we recommend,
 2. importing the notebook of choice as a Google Colab notebook (mounts to your drive folder)
     - Notebooks tagged `_FT` are for finetuning 
     - Notebooks tagged `_Eval` are to evaluate the respective finetuned model
-3. switching to GPU mode (preferably Premium Class + High RAM GPU)
+3. switching to GPU mode
+4. running as-is
 
-> **Note:** The notebook should run without errors if the filepaths are fixed according to your GDrive setup. If you run into any issues, please feel free to drop an [Issue](https://github.com/rish-16/cs4248-project/issues).
+**Notes:** 
+- The notebook should run without errors if the filepaths are fixed according to your GDrive setup. If you run into any issues, please feel free to drop an [Issue](https://github.com/rish-16/cs4248-project/issues).
+- We recommend configuring a Premium Class + High RAM GPU on Google Colab; more often than not, with Colab+, you'll be assigned an A100!
 
 ### Scripts
 
@@ -67,6 +72,7 @@ pip3 install -r requirements.txt
 - The configurations that can be changed have `# change` comments beside them. 
 - For the models, you can choose between `google/flan-t5-large`, `google/flan-t5-base`, and `google/flan-t5-small`.
 - We do not include the DeepSpeed code since the SOC Cluster has long-enough jobs to handle our training runs.
+- The scripts auto-configure the cluster to assign us an A100 80GB machine
 
 ## Contributing
 
