@@ -2,7 +2,7 @@
 
 set -e
 
-export SBATCH_JOB_NAME="train_flan_t5_3_langs" #change
+export SBATCH_JOB_NAME="train_flan_t5_3_langs" # change
 export USERNAME=$USER
 export SBATCH_FILE="Scripts/train_job.sh"
 

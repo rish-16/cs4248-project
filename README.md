@@ -17,15 +17,15 @@ guage. Specifically, our model achieved a clas-sification accuracy of 75% and an
 |-findings/
 |-scripts/
 |-src/
-|---jupyter/
-|---python/
+|--notebooks/
+|--python/
 |-translated_data/
 ```
 
 - `findings/` contains CSV files and log files that contain the results documented in our report
 - `scripts/` contains code you can run on the SOC Cluster
 - `code/` contains code to train and run inference (both in Python and Jupyter Notebook format)
-- `translated_data/` contains the translated e-SNLI samples for train, test, and dev set
+- `translated_data/` contains the translated e-SNLI samples for train, test, and dev set (ie, MLe-SNLI)
 
 > You can find our final CS4248 group project report at [`CS4248_Group19_Final_Report.pdf`](https://github.com/rish-16/cs4248-project/blob/main/CS4248_Group19_Final_Report.pdf)!!
 
@@ -45,21 +45,28 @@ If running the notebooks, we recommend,
 
 ### Scripts
 
-If running the python scripts on the SOC Cluster, we recommend,
+If running the python scripts on the SOC Cluster, please follow these instructions:
 
 1. Set up the env by running the following lines:
 
 ```bash
-python3 -m venv ml_train
-source ml_train/bin/activate
+python3 -m venv mlesnli_train
+source mlesnli_train/bin/activate
 pip3 install -r requirements.txt
 ```
 
-2. Make the appropriate changes to `run_train_job.sh` and `run_inference_job.sh` in `Scripts`, `train.py` and `inference.py` in `src\python`. The configurations that should/may be changed are have `#change` comments beside them.
+2. Make the appropriate changes to the following files:
+    - experiment name and output/save directories in `run_train_job.sh` and `run_inference_job.sh` found in `scripts/`
+    - model name and filepaths in `train.py` and `inference.py` found in `src/python/`. 
 
-3. Run `chmod +x` for `run_train_job.sh` and `run_inference_job.sh`.
+3. Run `chmod +x` for `run_train_job.sh` and `run_inference_job.sh`
 
-4. Run `./Scripts/run_train_job.sh`. Once done, run `./Scripts/run_inference_job.sh`.
+4. Run `./Scripts/run_train_job.sh`. Once done, run `./scripts/run_inference_job.sh`
+
+**Notes:**
+- The configurations that can be changed have `# change` comments beside them. 
+- For the models, you can choose between `google/flan-t5-large`, `google/flan-t5-base`, and `google/flan-t5-small`.
+- We do not include the DeepSpeed code since the SOC Cluster has long-enough jobs to handle our training runs.
 
 ## Contributing
 
