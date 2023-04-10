@@ -2,7 +2,7 @@
 
 > By Rishabh Anand, Ryan Chung Yi Sheng, Huaiyu Deng, Zhi Bin Cai, Tan Rui Quan
 
-Code for CS4248 Group Project (AY22/23 Sem 2) [[`code`](https://github.com/rish-16/cs4248-project), [`pdf`](), [`MLeSNLI on HuggingFace`](https://huggingface.co/datasets/rish16/MLe-SNLI)]
+Code for CS4248 Group Project (AY22/23 Sem 2) [[`code`](https://github.com/rish-16/cs4248-project), [`pdf`](https://github.com/rish-16/cs4248-project/blob/main/CS4248_Group19_Final_Report.pdf), [`MLeSNLI on HuggingFace`](https://huggingface.co/datasets/rish16/MLe-SNLI)]
 
 ## Abstract
 
@@ -27,7 +27,7 @@ guage. Specifically, our model achieved a clas-sification accuracy of 75% and an
 - `code/` contains code to train and run inference (both in Python and Jupyter Notebook format)
 - `translated_data/` contains the translated e-SNLI samples for train, test, and dev set
 
-> You can find our final CS4248 group project report at `CS4248_Group19_Final_Report.pdf`!!
+> You can find our final CS4248 group project report at [`CS4248_Group19_Final_Report.pdf`](https://github.com/rish-16/cs4248-project/blob/main/CS4248_Group19_Final_Report.pdf)!!
 
 ## Running Instructions
 
