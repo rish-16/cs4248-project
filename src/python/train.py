@@ -25,8 +25,8 @@ import pandas as pd
 
 
 DATAPATH = "translated_data/"
-MODEL = "flan-t5-large"
-FOLDER_NAMES = f"{MODEL}-3lang" # change
+MODEL = "flan-t5-large"  # change
+FOLDER_NAMES = f"{MODEL}-3lang"  # change
 
 
 def read_translated_data(path, n_samples, lang):
@@ -46,7 +46,7 @@ def read_translated_data(path, n_samples, lang):
     return data
 
 
-n_samples_per_lang = 5000  # change accordingly based on performance
+n_samples_per_lang = 5000  # change
 
 languages = {
     "german": read_translated_data(f"{DATAPATH}esnli_train_de.csv", n_samples_per_lang, "german"),

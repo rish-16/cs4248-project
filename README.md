@@ -32,6 +32,7 @@ guage. Specifically, our model achieved a clas-sification accuracy of 75% and an
 ## Running Instructions
 
 ### Notebooks
+
 If running the notebooks, we recommend,
 
 1. creating a Google Drive with `translated_data` inside
@@ -41,11 +42,22 @@ If running the notebooks, we recommend,
 > **Note:** The notebook should run without errors if the filepaths are fixed according to your GDrive setup. If you run into any issues, please feel free to drop an [Issue](https://github.com/rish-16/cs4248-project/issues).
 
 ### Scripts
+
 If running the python scripts on the SOC Cluster, we recommend,
 
-1. 
+1. Set up the env by running the following lines:
 
-> **Note:**
+```bash
+python3 -m venv ml_train
+source ml_train/bin/activate
+pip3 install -r requirements.txt
+```
+
+2. Make the appropriate changes to `run_train_job.sh` and `run_inference_job.sh` in `Scripts`, `train.py` and `inference.py` in `src\python`. The configurations that should/may be changed are have `#change` comments beside them.
+
+3. Run `chmod +x` for `run_train_job.sh` and `run_inference_job.sh`.
+
+4. Run `./Scripts/run_train_job.sh`. Once done, run `./Scripts/run_inference_job.sh`.
 
 ## Contributing
 

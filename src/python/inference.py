@@ -15,8 +15,8 @@ from transformers import AutoModelForSeq2SeqLM
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 
 DATAPATH = "translated_data"
-MODEL = "flan-t5-large" # change
-FOLDER_NAMES = f"{MODEL}-3lang" # change
+MODEL = "flan-t5-large"  # change
+FOLDER_NAMES = f"{MODEL}-3lang"  # change
 
 EVAL_DE_PATH = f"{DATAPATH}/final_random_2k_de.csv"
 MODELPATH = f"saved_models/{FOLDER_NAMES}/"
@@ -105,7 +105,7 @@ print(len(all_pred))
 
 to_save = []
 
-for item in zip(random_de_df[:50][1:], all_pred[1:]):
+for item in zip(random_de_df[:50], all_pred):
     idx, prem, hypo, label, expl, _ = item[0]  # _ is the language [german]
     pred_label, pred_expl = item[1]
 
