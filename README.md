@@ -17,7 +17,7 @@ guage. Specifically, our model achieved a clas-sification accuracy of 75% and an
 
 ```
 |-findings/
-|-scripts/
+|-Scripts/
 |-src/
 |--notebooks/
 |--python/
@@ -25,7 +25,7 @@ guage. Specifically, our model achieved a clas-sification accuracy of 75% and an
 ```
 
 - `findings/` contains CSV files and log files that contain the results documented in our report
-- `scripts/` contains code you can run on the SOC Cluster
+- `Scripts/` contains code you can run on the SOC Cluster
 - `code/` contains code to train and run inference (both in Python and Jupyter Notebook format)
 - `translated_data/` contains the translated e-SNLI samples for train, test, and dev set (ie, MLe-SNLI)
 
@@ -61,12 +61,12 @@ pip3 install -r requirements.txt
 ```
 
 2. Make the appropriate changes to the following files:
-    - experiment name and output/save directories in `run_train_job.sh` and `run_inference_job.sh` found in `scripts/`
+    - experiment name and output/save directories in `run_train_job.sh` and `run_inference_job.sh` found in `Scripts/`
     - model name and filepaths in `train.py` and `inference.py` found in `src/python/`. 
 
 3. Run `chmod +x` for `run_train_job.sh` and `run_inference_job.sh`
 
-4. Run `./Scripts/run_train_job.sh`. Once done, run `./scripts/run_inference_job.sh`
+4. Run `./Scripts/run_train_job.sh`. Once done, run `./Scripts/run_inference_job.sh`
 
 **Notes:**
 - The configurations that can be changed have `# change` comments beside them. 
